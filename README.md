@@ -6,6 +6,11 @@
 
 ## 1. Proje Özeti
 
+### Proje Anlatım Videosu:
+
+[Buraya tıklayarak anlatım videosunu izleyin](https://www.youtube.com/watch?v=krLo-lGv0L0)
+
+
 ### Ne Yapıyor?
 
 Eco-Tech Kampanya Motoru, tek cümlelik bir kampanya fikrinden yola çıkarak üç farklı hedef kitleye uyarlanmış pazarlama içeriğini otomatik olarak üreten, insan onaylı bir AI içerik boru hattıdır.
