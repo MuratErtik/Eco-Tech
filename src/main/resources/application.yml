@@ -1,0 +1,30 @@
+
+spring:
+  application:
+    name: SamsungIC-Hackathon
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ecotech_db
+    username: ${POSTGRES_USER}
+    password: ${POSTGRES_PASSWORD}
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+
+  ai:
+    retry:
+      max-attempts: 4                 # 1 asil + 3 tekrar
+      backoff:
+        initial-interval: 2s
+        multiplier: 2                 # 2s -> 4s -> 8s (default 5 demo icin cok agresif)
+        max-interval: 10s
+      on-client-errors: false         # 4xx'lerde retry yapma (401/400 tekrarla duzelmez)
+    google:
+      genai:
+        api-key: ${GEMINI_API_KEY}
+        chat:
+          options:
+            model: gemini-2.5-flash
+            temperature: 0.7   # yaratici icerik uretimi icin biraz yuksek
